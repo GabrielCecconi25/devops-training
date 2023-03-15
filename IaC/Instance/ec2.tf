@@ -20,12 +20,13 @@ resource "aws_instance" "instance" {
   count         = 4
   ami           = data.aws_ami.ubuntu-ami.id
   instance_type = "t3a.medium"
+  key_name = "key-cecconi"
 
   vpc_security_group_ids      = ["sg-0fc985488a89b9abf"]
   subnet_id                   = "subnet-0a7e02cd7fcbafeb0"
   associate_public_ip_address = true
 
-  user_data = file("install_docker.sh")
+  user_data = file("environment.sh")
 
   root_block_device {
     delete_on_termination = true
