@@ -1,7 +1,7 @@
 <html>
 <head>
 <h1 style="text-align: center"> DevOps Training Lab </h1>
-<h2 style="text-align: center"> This repository is for study to technologies in DevOps and Cloud AWS </h2> 
+<h2 style="text-align: center"> This repository is for studies related to DevOps and AWS Cloud </h2> 
 </head>
 
 <body>
